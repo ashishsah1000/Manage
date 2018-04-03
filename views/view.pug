@@ -1,0 +1,27 @@
+extends layout
+
+block content 
+    .data      
+         table
+            thead
+                tr
+                    th Id
+                    th Item Name
+                    th Date Imported
+                    th Qunatity Available
+                    th Actions
+            tbody
+                each item in items
+                    tr
+                        td= item._id
+                        td= item.name
+                        td= item.date
+                        td(style="font-weight:700;")= item.qunatity
+                        td 
+                            .btn.red(style="margin-right:10px;")
+                                i.fa.fa-edit
+                            .btn.blue
+                                i.fa.fa-trash
+                            
+                       
+

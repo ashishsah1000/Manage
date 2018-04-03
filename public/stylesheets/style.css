@@ -1,0 +1,26 @@
+body {
+    padding: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+/* add the box  */
+
+.box {
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+
+/* data in the view */
+
+.data {
+    max-width: 80%;
+    padding: 20px 20px;
+    margin: 0px auto;
+}

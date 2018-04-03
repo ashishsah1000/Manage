@@ -1,0 +1,22 @@
+extends layout
+
+block content
+ 
+  .box
+    form(method="post" action="/addItem")
+     .row
+      .input-field.col.s6
+        input#id.validate( type='number' name="id")
+        label(for='Unique Id' ) Serial Number
+      .input-field.col.s6
+        input#name.validate(type='text' name="name")
+        label(for='Name') Instrument Name   
+     .row
+      .input-field.col.s6
+        input#date.validate( type='date' name="date")
+        label(for='Date') Current Date
+      .input-field.col.s6
+        input#name.validate(type='number' name="avb")
+        label(for='Name') Qunatity Bought
+      h1(align="center")
+         button.btn.blue.btn-large(type='submit', style='margin:0px auto;')  Submit 
